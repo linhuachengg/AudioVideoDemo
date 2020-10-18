@@ -29,7 +29,7 @@ class AudioRecorderHelper : Runnable{
                 MediaRecorder.AudioSource.MIC,
                 16000, AudioFormat.CHANNEL_IN_MONO, AudioFormat.ENCODING_PCM_16BIT, bufferSize
             )
-        pcmFile = File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_MUSIC),"test.pcm")
+        pcmFile = File(Environment.getDataDirectory(),"test.pcm")
         Log.d("lhc","pcmFile --> ${pcmFile.absolutePath}")
         }
 
